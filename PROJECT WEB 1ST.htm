@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang= "en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Main Window</title>
+    <link rel="stylesheet" href="styl 1hs.css" />
+
+
+</head>
+
+<body>
+      <section class="hidden">
+    <h1 align=center>ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΗΝ ΣΥΝΕΡΓΑΤΙΚΗ ΜΑΣ ΠΛΑΤΦΟΡΜΑ!</h1>
+    <h2 align=center> ΠΩΣ ΘΑ ΕΠΙΘΥΜΟΥΣΑΤΕ ΝΑ ΧΡΗΣΙΜΟΠΟΙΗΣΕΤΕ ΤΗΝ ΠΛΑΤΦΟΡΜΑ</h2>
+      </section>
+   
+    <div id="back" align=left>
+        <input type="button" value="ΠΙΣΩ"/>
+    </div>
+
+        <div id="arxiki" align=center>
+            <input type="button" value="ΩΣ ΧΡΗΣΤΗΣ" id="XRHSTHS"/>
+            <input type="button" value="ΩΣ ΔΙΑΧΕΙΡΙΣΤΗΣ" id="DIAXIRISI"  />
+        </div>
+        <div align=center id="forma" style="display: none;"> 
+          <form name="yourform" id="13" >
+          <input type="button" name="sundesh" value="ΣΥΝΔΕΣΗ" onclick="showForm()">
+          <input type="button" name="eggrafh" value="ΕΓΓΡΑΦΗ" onclick="showForm()">
+        </form>
+
+        </div>
+
+     <!--FORMA XRHSTH -->
+      <div id="form" style="display: none;">
+     <form name="myForm" action="HTML 2ND PAGE.htm" onsubmit="return validateForm()" >
+        <!--gia na valei o xristis/diaxeiristis to username-->
+            <label for="usr">Όνομα χρήστη:</label><br>
+            <input type="text" id="usr" name="usr"><br>
+        <!--gia na valei o xristis/diaxeiristis to password-->
+            <label for="pass">Κωδικός χρήστη:</label><br>
+            <input type="password" id="pass" name="pass"><br>
+        <!--gia email-->
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+        <!--submit ta stoixeia-->
+            <input type="submit" value="Submit" >
+    </form>
+        </div>
+
+        <!--FORMA DIAXIRISTI-->
+        <div id="forma2" style="display: none;">
+            <form name="forma2" action="DOKIMI HTML (2).htm" onsubmit="return validateForm()" >
+               <!--gia na valei o xristis/diaxeiristis to username-->
+                   <label for="usr">Όνομα διαχειριστή:</label><br>
+                   <input type="text" id="usr" name="usr"><br>
+               <!--gia na valei o xristis/diaxeiristis to password-->
+                   <label for="pass">Κωδικός διαχειριστή:</label><br>
+                   <input type="password" id="pass" name="pass"><br>
+               <!--submit ta stoixeia-->
+                   <input type="submit" value="Submit" >
+           </form>
+        </div>
+  
+
+  <div id="alert">Παρακαλώ καταχωρήστε όλα τα πεδία</div>
+   
+  <p><small>Copyright &copy; Omada web 2022-23</small></p>
+  
+
+      <script src="1ST JAVASCRIPT.js"></script>      
+</body>
+
+</html>
